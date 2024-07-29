@@ -24,12 +24,15 @@ function sortRichest() {
   });
   updateDOM();
 }
+
 function calculateWealth() {
   let wealth = data.reduce((x, z) => (x += z.money), 0);
 
   let wealthEl = document.createElement("div");
-  wealthEl.innerHTML = ` <h3>Total:<strong>${formatMoney(wealth)}
-    </strong></h3>`;
+  wealthEl.innerHTML = `<div class="sm:mt-6	sm:border-t-2	sm:border-red-500	sm:pt-1.5 sm:pl-1.5"> <h3 class="text-xl sm:text-fuchsia-800">Total:<strong >${formatMoney(
+    wealth
+  )}
+    </strong></h3></div>`;
 
   main.appendChild(wealthEl);
 }
@@ -38,10 +41,10 @@ function millionaires() {
   data = data.filter(function (user) {
     return user.money > 1000000;
   });
-  console.log(data);
 
   updateDOM();
 }
+
 async function getRandomUser() {
   let res = await fetch("https://randomuser.me/api/");
   let data = await res.json();
@@ -64,17 +67,20 @@ function doubleMoney() {
   updateDOM();
 }
 
-function addData(x) {
-  data.push(x);
+function addData(user) {
+  data.push(user);
 
   updateDOM();
 }
+
 function updateDOM(provideDta = data) {
-  main.innerHTML = " <h2><strong>Person</strong>wealth</h2>";
+  main.innerHTML = "";
   provideDta.forEach(function (item) {
     let element = document.createElement("div");
-    element.classList.add("person");
-    element.innerHTML = `<strong>${item.name}</strong>
+    element.classList.add("person", "sm:flex", "sm:justify-between", "sm:pt-5");
+    element.innerHTML = `<strong class="sm:flex sm:text-lg sm:font-normal sm:text-sm ">${
+      item.name
+    }</strong>
             ${formatMoney(item.money)}`;
     main.appendChild(element);
   });

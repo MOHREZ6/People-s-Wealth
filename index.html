@@ -5,23 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DOM Array methods</title>
-    <link rel="stylesheet" href="People's Wealth.css" />
+    <!-- <link rel="stylesheet" href="People's Wealth.css" />   -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1>People's Wealth</h1>
-    <div class="container">
-      <aside>
-        <button id="add-user">Add User</button>
-        <button id="double">Double Money</button>
-        <button id="show-millionaires">Show Only Millionaires</button>
-        <button id="sort-richest">Sort By Richest</button>
-        <button id="calculate-wealth">Calculate Entire Wealth</button>
-      </aside>
-      <main id="main">
-        <h2><strong>Person</strong>Wealth</h2>
+  <body class="bg-gray-300		" >
+    <div class="sm:mt-28  	">
+      <h1 class="sm:text-center sm:pb-6  sm:font-medium		sm:text-5xl			">People's Wealth</h1>
+      <div class="w-full h-3/6 		 justify-center flex    	">
+        <aside class="sm:block sm:w-1/5		 sm:py-4 sm:px-4    sm:border-t-2		sm:border-black 	">
+          <button
+            id="add-user"
+            class="sm:w-full	 sm:block  sm:mt-2 sm:bg-gray-300 sm:hover:bg-gray-400 sm:text-gray-800 sm:font-bold sm:text-sm			sm:py-3  sm:0.5 sm:rounded sm:items-center 
+            md:w-full	  md:block md:mt-2 md:bg-gray-300 md:hover:bg-gray-400 md:font-bold md:text-xl		 md:py-3 md:0.5 md:rounded  md:items-center  "
+          >
+            Add User
+          </button>
+          <button
+            id="double"
+            class="sm:w-full	 sm:block  sm:mt-2 sm:bg-gray-300 sm:hover:bg-gray-400 sm:text-gray-800 sm:font-bold sm:text-sm			sm:py-3  sm:0.5  sm:rounded sm:items-center md:w-full	  md:block md:mt-2 md:bg-gray-300 md:hover:bg-gray-400 md:font-bold md:text-xl		 md:py-3 md:0.5 md:rounded  md:items-center  ""        >
+            Double Money
+          </button>
+          <button
+            id="show-millionaires"
+            class="sm:w-full	 sm:block  sm:mt-2 sm:bg-gray-300 sm:hover:bg-gray-400 sm:text-gray-800 sm:font-bold sm:text-sm			sm:py-3  sm:0.5 sm:rounded sm:items-center md:w-full	  md:block md:mt-2 md:bg-gray-300 md:hover:bg-gray-400 md:font-bold md:text-xl		 md:py-3 md:0.5 md:rounded  md:items-center  ""        >
+            Show Only Millionaires
+          </button>
+          <button
+            id="sort-richest"
+            class="sm:w-full	 sm:block  sm:mt-2 sm:bg-gray-300 sm:hover:bg-gray-400 sm:text-gray-800 sm:font-bold sm:text-sm			sm:py-3  sm:0.5 sm:rounded sm:items-center md:w-full	  md:block md:mt-2 md:bg-gray-300 md:hover:bg-gray-400 md:font-bold md:text-xl		 md:py-3 md:0.5 md:rounded  md:items-center  ""        >
+            Sort By Richest
+          </button>
+          <button
+            id="calculate-wealth"
+            class="sm:w-full	 sm:block  sm:mt-2 sm:bg-gray-300 sm:hover:bg-gray-400 sm:text-gray-800 sm:font-bold sm:text-sm			sm:py-3  sm:0.5 	 sm:rounded sm:items-center md:w-full	  md:block md:mt-2 md:bg-gray-300 md:hover:bg-gray-400 md:font-bold md:text-xl		 md:py-3 md:0.5 md:rounded  md:items-center  ""        >
+            Calculate Entire Wealth
+          </button>
+        </aside>
+
+      <main id="main" class="  sm:w-3/6			 sm:h-min		 sm:py-2.5 sm:px-6   sm:border-l-2	 sm:border-black sm:border-t-2		 	">
+        <div class="sm:flex sm:justify-between	sm:border-b-2	sm:border-black sm:border-dashed
+
+        ">
+          <p class=" sm:flex	 	sm:text-xl		sm:pb-2.5	sm:pt-6				">Wealth</p>
+          <p  class=" sm:flex	 	 sm:text-xl	sm:pb-2.5	sm:pt-6		">Person</p>
+        </div>
+
+          
+        
       </main>
     </div>
-
+  </div>
     <script src="People's Wealth.js"></script>
   </body>
 </html>
